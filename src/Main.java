@@ -4,7 +4,7 @@ public class Main {
 
     static HashMap<String, HashSet<String>> prereqs = new HashMap<>();
     static HashMap<String, HashSet<String>> completed = new HashMap<>();
-
+//time checker
     public static void main(String[] args) {
         int N = 1000;
 
@@ -19,6 +19,8 @@ public class Main {
         long end = System.nanoTime();
 
         System.out.println("Average time to add " + N + " completions: " + (end - start) + " ns");
+
+       //code
         Scanner sc = new Scanner(System.in);
 
         printHelp();
@@ -27,7 +29,7 @@ public class Main {
         while (true) {
 
             System.out.print("> ");
-            String line = sc.nextLine().trim();
+            String line = sc.nextLine();
 
             if (line.isEmpty()) continue;
 
